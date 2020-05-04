@@ -32,6 +32,7 @@ h1 {
 
 figure {
   display: flex;
+  flex: 1 1 30rem;
   margin: 0.825rem 1rem;
 }
 
@@ -47,95 +48,21 @@ div {
   margin: 0 1rem;
 }
 
-main > div:not(:last-child) {
+h1 + div {
   margin: 0;
   width: 100%;
   display: flex;
-}
-
-main > div:not(:last-child) > :first-child {
-  flex: 1 1 auto;
-}
-
-main > div:not(:last-child) > :last-child {
-  flex: 1 1 30rem;
-}
-
-main > div:first-child + div {
   flex-wrap: wrap-reverse;
 }
 
-main > div:last-child div {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+h1 + div > div {
+  flex: 1 1 auto;
 }
 
-main > div:last-child img {
-  margin: 0.5rem 1rem;
-  max-width: 12rem;
-  max-height: 8rem;
-}
-
-main > div:first-child + div ul {
+h1 + div ul {
   list-style: none;
   margin: 0.825rem 0;
   padding: 0;
-}
-
-main > div:first-child div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-main > div:first-child ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  border-width: 2px 0 2px;
-  border-style: solid;
-  border-color: #aaa;
-}
-
-main > div:first-child li {
-  margin: 0.675rem 1.25rem;
-}
-
-main > div:first-child a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-@media (max-width: 48rem) {
-  main > div:first-child {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  main > div:not(:last-child) > div:last-child {
-    flex: 0;
-    display: block;
-  }
-}
-
-@media (max-width: 36rem) {
-  main > div:first-child ul {
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 1rem 0;
-  }
-  main > div:first-child li {
-    margin: 0.125rem;
-  }
-  main > div:last-child div {
-    flex-direction: column;
-  }
-  main > div:last-child img {
-    max-width: 50%;
-  }
 }
 
 @font-face {
