@@ -14,7 +14,7 @@ body {
 }
 
 main {
-  max-width: 72rem;
+  max-width: 50rem;
   margin: auto;
   padding: 2rem;
   display: flex;
@@ -32,7 +32,7 @@ h1 {
 
 figure {
   display: flex;
-  flex: 1 1 30rem;
+  flex: 1 1 15rem;
   margin: 0.825rem 1rem;
 }
 
